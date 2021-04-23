@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<!--In this we will use the css variables to give the styles. so  eclare the variables in rott using --variable name.
+And you can use these variables later when you want to apply that style to your page.-->
+<style>
+::selection{
+    background:pink;
+}
+h3::selection{
+    background:red;
+}
+:root{
+    --clr:white;
+    --bgclr:blue;
+}
+
+div{
+    background:var(--bgclr);
+}
+h2{
+    color:var(--clr);
+}
+
+h3{
+    --bgclr: yellow;
+    background:var(--bgclr);
+   
+}
+h4{
+    color:var(--clr);
+}
+</style>
+
+</head>
+<body>
+
+
+<div>
+<h2>This is main heading</h2>
+
+<h3>This is Normal  heading</h3>
+<h4>This is final heading</h4>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+<style>
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    
+}
+
+:root{
+    --width:100vw;
+}
+.main_div{
+    width:var(--width);
+    height:100vh;
+    padding-top:100px;
+    text-align:center;
+}
+
+h1{
+    color:#2980b9;
+    font-size:5rem; /* into 5 root em means 5 times than browser site*/
+    font-family: 'Original Surfer', cursive;
+}
+
+h1:after{
+    content:"\f005";
+    
+    font-family: "Font Awesome 5 Free";
+    width: calc(var(--width) - 20vw);
+    height:25px;
+    color: #1abc9c;
+    font-size:3rem;
+    
+}
+
+h1::selection{
+    background:yellow;
+}
+</style>
+
+</head>
+
+<body>
+<div class='main_div'>
+
+<h1>Chaitali Nirgun</h1>
+</div>
+</body>
+
+</html>
+
